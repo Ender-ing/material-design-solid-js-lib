@@ -17,7 +17,6 @@ export function setupSource(base){
 
 // Load a script
 function loadScript(src, onload, onerror){
-    //
     let script = document.createElement("script");
     script.setAttribute("src", src);
     script.setAttribute("async", "true");
@@ -28,7 +27,50 @@ function loadScript(src, onload, onerror){
 }
 
 const resourceList = [
-    ["linear-progress", "@material/linear-progress.js"]
+["elevated-button", "@material/button--elevated-button.js"],
+["filled-button", "@material/button--filled-button.js"],
+["filled-tonal-button", "@material/button--filled-tonal-button.js"],
+["outlined-button", "@material/button--outlined-button.js"],
+["text-button", "@material/button--text-button.js"],
+["checkbox", "@material/checkbox.js"],
+["chip-set", "@material/chips--chip-set.js"],
+["assist-chip", "@material/chips--assist-chip.js"],
+["filter-chip", "@material/chips--filter-chip.js"],
+["input-chip", "@material/chips--input-chip.js"],
+["suggestion-chip", "@material/chips--suggestion-chip.js"],
+["dialog", "@material/dialog.js"],
+["divider", "@material/divider.js"],
+["elevation", "@material/elevation.js"],
+["fab", "@material/fab--fab.js"],
+["branded-fab", "@material/fab--branded-fab.js"],
+["filled-field", "@material/field--filled-field.js"],
+["outlined-field", "@material/field--outlined-field.js"],
+["focus-ring", "@material/focus.js"],
+["icon", "@material/icon.js"],
+["icon-button", "@material/iconbutton--icon-button.js"],
+["filled-icon-button", "@material/iconbutton--filled-icon-button.js"],
+["filled-tonal-icon-button", "@material/iconbutton--filled-tonal-icon-button.js"],
+["outlined-icon-button", "@material/iconbutton--outlined-icon-button.js"],
+["list", "@material/list--list.js"],
+["list-item", "@material/list--list-item.js"],
+["menu", "@material/menu--menu.js"],
+["menu-item", "@material/menu--menu-item.js"],
+["sub-menu", "@material/menu--sub-menu.js"],
+["linear-progress", "@material/progress--linear-progress.js"],
+["circular-progress", "@material/progress--circular-progress.js"],
+["radio", "@material/radio.js"],
+["ripple", "@material/ripple.js"],
+["filled-select", "@material/select--filled-select.js"],
+["outlined-select", "@material/select--outlined-select.js"],
+["select-option", "@material/select--select-option.js"],
+["slider", "@material/slider.js"],
+["switch", "@material/switch.js"],
+["tabs", "@material/tabs--tabs.js"],
+["primary-tab", "@material/tabs--primary-tab.js"],
+["secondary-tab", "@material/tabs--secondary-tab.js"],
+["filled-text-field", "@material/textfield--filled-text-field.js"],
+["outlined-text-field", "@material/textfield--outlined-text-field.js"]
+// Elements not part of the material design web components library should start with "x-" (e.g. x-layout)
 ], flatResourceList = resourceList.flat(Infinity);
 
 // Process .design XML data and load needed resources
