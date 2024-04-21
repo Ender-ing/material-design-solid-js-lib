@@ -1,6 +1,6 @@
 {
     "name": "material-design-web-solidjs",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "Material Design Library for SolidJS",
     "main": "index.js",
     "scripts": {
